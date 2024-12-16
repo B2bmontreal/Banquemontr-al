@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body class="bg-blue-50 font-sans">
+
   <!-- Header -->
   <header class="bg-blue-900 shadow-md sticky top-0 z-10">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -21,9 +22,9 @@
     </div>
   </header>
 
-  <div class="flex flex-wrap">
+  <div class="flex flex-col md:flex-row">
     <!-- Sidebar -->
-    <aside class="block p-2 bg-blue-900 md:w-64 h-screen shadow-md">
+    <aside class="block p-4 bg-blue-900 md:w-64 h-screen shadow-md">
       <nav class="space-y-4 py-8 px-6">
         <a href="mes_comptes.html" class="flex items-center text-yellow-400 font-semibold hover:text-yellow-300 transition">
           <i class="fas fa-home mr-3"></i> Mes comptes
@@ -64,7 +65,7 @@
 
       <!-- Accounts Section -->
       <h2 class="text-2xl font-bold text-blue-900 mb-4">Sommaire des comptes</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Account Card 1 -->
         <div class="bg-yellow-400 p-2 font-bold shadow-lg p-6 transition transform hover:scale-105">
           <div class="flex items-center justify-between">
@@ -73,7 +74,7 @@
           </div>
           <p class="text-gray-700 mt-2">Titulaire: <strong>Jessica Girolt</strong></p>
           <p class="text-2xl font-bold text-black-400 mt-4">752 020,38 $</p>
-          <button class="mt-4 text--900 hover:underline" onclick="toggleDetails('details-1')">Voir les détails</button>
+          <button class="mt-4 text-blue-900 hover:underline" onclick="toggleDetails('details-1')">Voir les détails</button>
         </div>
 
         <!-- Account Card 2 -->
@@ -103,10 +104,10 @@
       <h2 class="text-2xl font-bold text-blue-900 mt-8 mb-4">Transactions récentes</h2>
       <div class="bg-yellow-400 p-2 font-bold">
         <ul class="list-disc list-inside text-gray-700">
-          <li>Virement reçu: 750 000,00 $ (15 Déc 2024)</li> <!-- Transaction ajoutée -->
-          <li>Prélèvement: 200 $ (14 Déc 2024)</li> <!-- Transaction ajoutée -->
-          <li>Prélèvement: 50 $ (13 Déc 2024)</li> <!-- Transaction ajoutée -->
-          <li>Prélèvement: 150 $ (10 Déc 2024)</li> <!-- Transaction ajoutée -->
+          <li>Virement reçu: 750 000,00 $ (15 Déc 2024)</li>
+          <li>Prélèvement: 200 $ (14 Déc 2024)</li>
+          <li>Prélèvement: 50 $ (13 Déc 2024)</li>
+          <li>Prélèvement: 150 $ (10 Déc 2024)</li>
         </ul>
       </div>
 
